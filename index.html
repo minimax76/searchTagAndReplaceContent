@@ -1,0 +1,22 @@
+<html>
+<head>
+<title>AJAX, le basi prima dell' utilizzo</title>
+<script type="text/javascript">
+<!--//
+function prendiElementoDaId(id_elemento) {
+ var elemento;
+ if(document.getElementById)
+  elemento = document.getElementById(id_elemento);
+ else
+  elemento = document.all[id_elemento];
+ return elemento;
+};
+//-->
+</script>
+</head>
+<body onload="prendiElementoDaId('paragrafo').innerHTML = 'Buon giorno <strong>JavaScript</strong>';">
+<p id="paragrafo">
+testo del paragrafo che verrà cambiato al caricamento del documento
+</p>
+</body>
+</html>
